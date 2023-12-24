@@ -233,7 +233,7 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start; /* Change from space-evenly to flex-start */
   max-width: 400px;
   /* Set your desired maximum width */
   margin: 0 auto;
@@ -242,6 +242,7 @@ iframe {
 
 .impact-item {
   margin: 20px;
+  align-self: flex-start; /* Align each item from the top */
 }
 
 .digitalDetox-container {
@@ -259,7 +260,7 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #detoxInfo {
@@ -269,6 +270,10 @@ iframe {
 .pdf-link {
   position: relative;
   display: inline-block;
+}
+.pdf-link img {
+  max-width: 800px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .pdf-link .pdf-text {
